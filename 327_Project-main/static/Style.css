@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+.btn1 {
+  border: none;
+  border-radius: 20px;
+  white-space: nowrap;
+  display: block;
+  background-color: #F3F2F8;
+  color: black;
+  padding: 8px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn2 {
+  border: none;
+  border-radius: 20px;
+  white-space: nowrap;
+  display: block;
+  background-color: #F3F2F8;
+  color: black;
+  padding: 8px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn3 {
+  border: none;
+  border-radius: 20px;
+  white-space: nowrap;
+  display: block;
+  background-color: #F3F2F8;
+  color: black;
+  padding: 8px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.question {
+  text-align: center;
+  margin-top: 15vw;
+  margin-bottom: 3vw;
+  font-size: 30px;
+  position: relative;
+  margin-right: 0;
+}
+
+.row {
+    margin-right: 0;
+}
+
+/* .Home {
+  border: none;
+  border-radius: 20px;
+  display: block;
+  background-color: #F3F2F8;
+  padding: 8px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+} */
+
+input[type=button], input[type=submit] {
+  background-color: #F3F2F8;
+  border: none;
+  border-radius: 20px;
+  text-color: black;
+  padding: 8px 30px;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#mybutton {
+  position: right;
+  bottom: -4px;
+  right: 10px;
+}

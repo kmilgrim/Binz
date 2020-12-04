@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset = "UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>FullScreen Responsive Login Page</title>
+      <link rel="stylesheet" href="{{url_for('static', filename='basisStyle.css')}}">
+    </head>
+    <body>
+      <section>
+        <div class="imgBx">
+          <img src="{{url_for('static', filename='sorting_waste.png')}}" alt="Waste Sorting">
+        </div>
+        <div class="contentBx">
+          <div style="background-color: rgba(255,255,255,0.5);" class="formBx">
+            <h2>Login</h2>
+            <form action="#", method="post">
+                <p style="margin: 0 2px 10px; font-size: 12px;">New to Binz? Welcome aboard! Type a new Username/Password to create a new account.</p>
+              <div class="inputBx">
+                  <span><strong>Username</strong></span>
+                <input style="width: 87%;" type="text" name="nm">
+              </div>
+              <div class="inputBx">
+                  <span><strong>Password</strong></span>
+                <input style="width: 87%;" style="margin-bottom: 5px" type="password" name="ps">
+              </div>
+              {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        {% for msg in messages %}
+                            <p style="color: #CC0000;">{{msg}}</p>
+                        {% endfor %}
+                    {% endif %}
+              {% endwith %}
+              <div class="inputBx">
+                <input style=" width: 95%; margin-bottom: 15px;" type="submit" value="Sign In" name='submit_button'>
+              </div>
+              <div class="inputBx">
+                  <p style="margin-bottom: 2px;"><strong>Don't have an account?</strong></p> <!--<a href="#">Sign up</a> or</p>-->
+                <div class="genUser">
+                  <input style="width: 95%; " type="submit" value="Continue as Guest" name='submit_button'>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </body>
+
+</html>

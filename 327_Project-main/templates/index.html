@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test Home Page</title>
+    </head>
+    <body>
+        <h1>TEST HOME PAGE</h1>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for msg in messages %}
+                    <p style="color: #CC0000;">{{msg}}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <h3>Current User's Information:</h3>
+        <ul>
+            <li id="nameDisp">Name: {{name}}</li>
+            <li id="passDisp">Pass: {{password}}</li>
+            <li id="pointDisp">Points: {{points}}</li>
+        </ul>
+        <button onclick="window.location.href = 'logout'">Logout</button>
+        <button onclick="window.location.href = 'deleet'">Delete Account</button>
+        <hr>
+        <div style="background-color: black;">
+            <h3 style="color: white;">Leaderboard</h3>
+            <ul>
+                <li style="color: #FFD700;" id="place1">First Place: {{name}}</li>
+                <li style="color: #C0C0C0;" id="place2">Pass: {{password}}</li>
+                <li style="color: #CD7F32;" id="place3">Points: {{points}}</li>
+            </ul>
+        </div>
+    </body>
+</html>
