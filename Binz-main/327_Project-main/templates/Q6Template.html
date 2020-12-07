@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Waste Sorting Guide</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajaz/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootsrapcdn.com/bootsrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
+  <link href="{{url_for('static', filename='Style.css')}}" rel="stylesheet">
+</head>
+
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-text"><strong>Binz</strong></a>
+    <div id="navbarResponsive">
+      <ul class="navbar-nav ml-auto" style="display: inline;">
+        <li class="nav-item" style="float: right; margin: 0 7px;">
+          <a class="nav-link" href="{{url_for("home")}}">Home</a>
+        </li>
+    </div>
+  </div>
+</nav>
+<!-- question -->
+<div class="row" style="margin: 0; padding: 0 40px;">
+  <div class="col-md-3">
+  </div>
+  <div style="margin: 0 auto;">
+    <div class="question" style="font-size: max(3.2vw, 150%);">
+        Item is larger than your phone (smaller objects can fall through cracks in sorting machinery).
+    </div>
+  </div>
+  <div class="col-md-3">
+  </div>
+</div>
+<!-- yes no buttons -->
+<div class="row" style="margin: 0 auto;">
+  <div class="col-md-5">
+  </div>
+  <div style="margin: 0 auto; font-size: 30px; background-color: #F3F2F8; padding: 5px 25px; border-radius: 20px;">
+    <a style="color: black;" href="Recycle.html" >Yes</a>
+  </div>
+  <div style="margin: 0 auto; font-size: 30px; background-color: #F3F2F8; padding: 5px 25px; border-radius: 20px;">
+    <a style="color: black;" href="Trash.html" >No</a>
+  </div>
+  <div class="col-md-5">
+  </div>
+
+
+</body>
+</html>
