@@ -20,3 +20,5 @@ by Flask, which is most likely 127.0.0.1:5000 (localhost:5000). The terminal
 will notify you what page to enter in your browser to run the application.
 Then, either type a new account into the text boxes to make an account or 
 continue as a guest to view the application, and start the sorting quiz.
+
+Click here to see the app in action! bit.ly/Binz_Tutorial
